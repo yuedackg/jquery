@@ -14,17 +14,23 @@
 		}
 
 		header {
-			width: 99%;
+			width: 100%;
 		}
 
 		nav {
-			width: 31%;
+			width: 30%;
 		}
 
 		main {
-			width: 69%;
+			width: calc( 100% - 30%);
 		}
-
+		li{
+			list-style: none;
+			margin-left: 0;
+		}
+		ul{
+			padding-left: 0;
+		}
 		* {
 			border: solid 1px red;
 			box-sizing: border-box;
@@ -42,7 +48,7 @@
 				console.log("#eスポーツコースがクリックされました")
 				$("#secm").hide()
 				$("#sece").show()
-		});
+			});
 		});
 	</script>
 </head>
