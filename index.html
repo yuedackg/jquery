@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+	<style>
+		body {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		header {
+			width: 99%;
+		}
+
+		nav {
+			width: 31%;
+		}
+
+		main {
+			width: 69%;
+		}
+
+		* {
+			border: solid 1px red;
+			box-sizing: border-box;
+		}
+	</style>
+	<script src="./jquery-3.7.0.min.js"></script>
+	<script>
+		$(function () {
+			$("#lim").click(function () {
+				console.log("#メディア学科がクリックされました")
+				$("#secm").show()
+				$("#sece").hide()
+			});
+			$("#lie").click(function () {
+				console.log("#eスポーツコースがクリックされました")
+				$("#secm").hide()
+				$("#sece").show()
+		});
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<h1>ヘッダー</h1>
+	</header>
+	<nav>
+		<ul>
+			<li id="lim" class="item">メディア学科</li>
+			<li id="lie" class="item">eスポーツコース</li>
+		</ul>
+	</nav>
+	<main>
+		<section id="secm">
+			<h1>メディア学科</h1>
+		</section>
+		<section id="sece">
+			<h1>eスポーツコース</h1>
+		</section>
+	</main>
+</body>
+
+</html>
