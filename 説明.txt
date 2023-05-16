@@ -1,0 +1,30 @@
+
+function printA(){
+　document.write( "hello");
+ documen.write( "world");
+}
+
+printA();
+printA();
+printA();
+printA();
+
+§関数について
+function は複数の命令等について名前を付けるしくみ
+
+function 関数名　( 引数　){
+	命令の内容
+
+}
+
+使い捨ての関数＝その場でのみ使用する。命令をまとめるだけに使う　
+⇒　関数名を省略することが出来る
+
+引数：関数を指定することもできる
+
+ex) 名前が不要なケース
+function (){
+	document.write( "hello")
+	document.write( "world")
+}
+§

@@ -22,15 +22,18 @@
 		}
 
 		main {
-			width: calc( 100% - 30%);
+			width: calc(100% - 30%);
 		}
-		li{
+
+		li {
 			list-style: none;
 			margin-left: 0;
 		}
-		ul{
+
+		ul {
 			padding-left: 0;
 		}
+
 		* {
 			border: solid 1px red;
 			box-sizing: border-box;
@@ -40,12 +43,10 @@
 	<script>
 		$(function () {
 			$("#lim").click(function () {
-				console.log("#メディア学科がクリックされました")
 				$("#secm").show()
 				$("#sece").hide()
 			});
 			$("#lie").click(function () {
-				console.log("#eスポーツコースがクリックされました")
 				$("#secm").hide()
 				$("#sece").show()
 			});
