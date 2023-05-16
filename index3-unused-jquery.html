@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQueryをCDNから取り込むサンプル</title>
+	<style>
+		*{
+			box-sizing: border-box;
+			border: solid 2px black;
+		}
+		body{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		header{
+			width: 100%;
+		
+		}
+	</style>
+	<script>
+		function showMC(){
+			console.log("call: showMC();")
+			let item = document.getElementById("item1");
+			item1.style.display="none";
+			let item2 = document.getElementById("item2");
+			item2.style.display="block";
+
+		}
+		function showES(){
+			let item3 = document.getElementById("item1");
+			item3.style.display="block";
+			let item4 = document.getElementById("item2");
+			item4.style.display="none";
+		}
+
+	</script>
+</head>
+<body>
+	<header>
+		<h1>jquery を<b>使わない</b> 使用したコンテンツの作成</h1>
+
+	</header>
+	<nav>
+		menu
+		<ul>
+			<li onclick="showMC()">media communication corse</li>
+			<li onclick="showES()">e sports course</li>
+		</ul>
+	</nav>
+	<main>
+		<section id="item1">
+			<h1>media communication corse</h1>
+
+		</section>
+		<section id="item2">
+			<h1>e sports course </h1>
+
+		</section>
+
+	</main>
+</body>
+</html>
