@@ -27,4 +27,41 @@ function (){
 	document.write( "hello")
 	document.write( "world")
 }
-§
+
+§引数に関数名を書くこともある
+
+foo( "hello")  ・・・引数が文字列
+bar( 15 ) ・・・・引数が数字
+
+Alice( bob() )  ・・・引数に関数を書くことが出来る
+
+function bob(){ 
+
+}
+
+
+Alice(
+	function (){ 
+
+	}
+)
+
+§セレクタ　（CSSセレクタ）
+セレクタはHTMLで使われる名前のこと
+・HTMLのタグの名前    そのまま
+・idの名前　　　　　　　　先頭に「#」
+・classの名前　　　　　 先頭に「.」
+
+全て要素はセレクタの組合せ
+・セレクタ　セレクタ　　　・・・　子孫セレクタ　：左のセレクタで示される要素の中の・中の・・・・に要素が
+・セレクタ　>　セレクタ　・・・　親子セレクタ　：左のセレクタで示される要素の中に、右の要素がある
+
+<div id="divgroup">
+	<h1>大分類</h1>　　　　　　・・・・div > h1
+	<div>
+		<h1>中分類</h1>   ・・・・div > div > h1 ;  #divgroup > div > h1 
+		<div>
+			<h1>小分類</h1>
+		</div>
+	</div>
+</div>
