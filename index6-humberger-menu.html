@@ -6,103 +6,47 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<!-- ここにjQueryライブラリを組み込みます -->
+
+	<!-- ここから下は、ｊQueryのプログラミング -->
+
+	<!-- ここから下は、CSS。完成したら別のファイルに移動します -->
 	<style>
-		.menu-btn {
-			position: fixed;
-			top: 15px;
-			right: 15px;
-			display: flex;
-			height: 60px;
-			width: 60px;
-			justify-content: center;
-			align-items: center;
-			z-index: 90;
-			background-color: #3584bb;
 
-		}
-
-		.menu-btn span,
-		.menu-btn span:before,
-		.menu-btn span::after {
-			content: '';
-			height: 3px;
-			width: 25px;
-			border-radius: 3px;
-			background-color: white;
-			position: absolute;
-
-		}
-
-		.menu-btn span::before {
-			bottom: 8px;
-
-		}
-
-		.menu-btn span::after {
-			top: 8px;
-		}
-
-		#menu-btn-check:checked ~ .menu-btn span{
-			background-color: rgba(255,255,255,0);
-		}
-		#menu-btn-check:checked ~ .menu-btn span::before{
-			bottom: 0;
-			transform:rotate( 45deg);
-		}
-		#menu-btn-check:checked ~ .menu-btn span::after{
-			top: 0;
-			transform: rotate(-45deg);
-		}
-		#menu-btn-check { 
-			display: none;
-		}
-		body{
-			display: flex;
-			flex-wrap: wrap;
-		}
-		header{
-			height: 80px;
-			width: 100%;
-			background-color: lightblue;
-			padding-bottom: 0;
-			margin-bottom: 0;
-		}
-		nav{
-			width: 100%;
-			padding: 0;
-			margin: 0;
-			background-color: burlywood;
-		}	</style>
-		
-
-
+	</style>
 </head>
 
 <body>
-
-<!-- 	<header>
-			<div>
-		ここでmenuの状態を管理する
-		<input type="checkbox" name="" id="menu-btn-check">
-		label がクリックされたときにチェックボックスと連動する
-		<label for="menu-btn-check" class="menu-btn">
-			ここに枠を設ける
-			<span></span>
-		</label>
-	</div>
-	</header> -->
+	<!-- ハンバーガーメニューを構築する -->
 	<header>
+		<!-- ハンバーガーメニュー用のフラグ -->
 		<input type="checkbox" name="" id="menu-btn-check">
-		<label for="menu-btn-check" class="menu-btn" >
+		<!-- ここがメニューアイコン -->
+		<label for="menu-btn-check" class="menu-btn">
+			<!-- ここが線になる -->
 			<span></span>
 		</label>
 	</header>
+	<!-- ナビゲーション。ハンバーガーメニューから呼び出されるメニュー。 -->
 	<nav>
 		<ul>
 			<li>media communication course</li>
 			<li>e sports course</li>
 		</ul>
 	</nav>
+	<main>
+		<!-- 学科ごとにコンテンツを用意する -->
+		<!-- 各セクションには、idを振って、プログラミングする -->
+		<section>
+			<h1>メディアコミュニケーションコースの時間割</h1>
+			<img src="./images/schedule-mc.png" alt="">
+		</section>
+		
+		<section>
+			<h1>eスポーツコースの時間割</h1>
+			<img src="./images/schedule-es.png" alt="">
+		</section>
+	</main>
 </body>
 
 </html>
