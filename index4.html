@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+	<!--
+
+	・この書き方は、自分自身がjQueryのパッケージを保存しない方法（とてもよくつかわれる方法）
+	・CDN（コンテンツ　デリバリ　ネットワーク）がファイルを配信してくれる
+	　CDN：Akamai 等の企業
+	　Googleからファイルをダウンロードをする＝AkamaiなどのCDN業者の持っているファイルをダウンロードしている 
+
+-->
+<!-- jQueryのプログラムは、scriptタグの間に書く⇒　ｊQueryはJavaScriptの一部 -->
+	<script>
+		// 「何もしない」ｊQuery のプログラム
+		$();	
+
+		//何かするプログラム　ほぼ何もしないが、
+		//これからすることを埋め込むことが出来る
+		$( function(){
+		
+			// jQury はセレクタとアクション(イベント）	の組合せ
+			$("body").click()
+			
+		});
+
+	</script>
+</head>
+
+<body>
+	<ul>
+		<li id="li_1st">media coruse</li>
+		<li>esports course</li>
+
+	</ul>
+
+	<div >
+		<h1>media coruse</h1>
+		<div>
+			media corse はデザインの学習を行うコースです
+			ivzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+		</div>
+	</div>
+
+	<div>
+		<h1>espors course</h1>
+		<div>esports courseはmedia courseに加えてesportsの授業も行います。</div>
+	</div>
+	<!-- alt+zで画面の右端で折り返し -->
+</body>
+
+</html>
