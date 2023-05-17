@@ -1,0 +1,17 @@
+		$(function () {
+			$("input").change(function () {
+				$(this).parent().css( "background-color","orange");
+				$(this).parent().parent().parent().css("background-color", "orange");
+				$(this).parent().nextAll("td").css("background-color", "orange");
+				$(this).parent().prevAll("td").css("background-color", "orange");
+				console.log( $(this).parent().prevAll("td").css("background-color", "orange")
+				);
+				var tanka = $(this ).parent().prev( ".kakaku").text();
+				var suryo = $(this).val();
+				console.log( tanka)
+				console.log(suryo)
+				console.log( tanka * suryo);
+				$(this).parent().next("td").text( tanka*suryo);
+
+			});
+		});

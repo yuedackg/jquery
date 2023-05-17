@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#secCalc table {
+			background-color: black;
+
+		}
+
+		#secCalc table th,
+		#secCalc table td {
+			background-color: white;
+		}
+
+		#secCalc table th {
+			width: 100px;
+		}
+
+		#secCalc table th:nth-child(1),
+		#secCalc table th:nth-child(4) {
+			width: 200px;
+
+		}
+	</style>
+	<!-- ここにjQueryのリンクを置く -->
+	<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+	<script>
+		// ここから下にjQueryのプログラムを記述する
+
+
+	</script>
+</head>
+
+<body>
+	<header></header>
+
+	<script>
+
+			$('header').load( "header.html");
+
+
+	</script>
+	<nav>
+		<ul>
+			<li>top screen</li>
+			<li>table calc</li>
+		</ul>
+	</nav>
+	<main>
+
+		<section id="secTop">
+
+		</section>
+		<section id="secCalc">
+			<table>
+				<tr>
+					<th>商品名</th>
+					<th>単価</th>
+					<th>数量</th>
+					<th>小計</th>
+				</tr>
+				<tr>
+					<td>シャープペンシル</td>
+					<td class="kakaku">100</td>
+					<td><input type="text" name="" id="inTexe"></td>
+					<td><label for="" id="outText"></label></td>
+
+				</tr>
+				<tr>
+					<td>消しゴム</td>
+					<td class="kakaku">50</td>
+					<td><input type="text" name="" id="inTexe"></td>
+					<td><label for="" id="outText"></label></td>
+				</tr>
+				<tr>
+					<td>定規</td>
+					<td class="kakaku">120</td>
+					<td><input type="text" name="" id="inTexe"></td>
+					<td><label for="" id="outText"></label></td>
+				</tr>
+			</table>
+		</section>
+	</main>
+	<footer>
+
+	</footer>
+</body>
+
+</html>
